@@ -18,4 +18,10 @@ export class AuthGuard {
             }
         )
     }
+
+    canActivateChild(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+
+        return this.canActivate(route, state);
+    }
+
 }

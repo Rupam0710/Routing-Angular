@@ -1,3 +1,6 @@
 You can add relative path in the root file that is app.component file . (routerLink = "servers")
 But you cannot add relative paths in the child folder file because it will give an error and try to find the path i.e. appRootPath/childpath (relative path always try to append with current path)which is not available. 
 But if we use absolute path in child component i.e. (routerLink = "/servers") relative path does not try to append with current path and we don't get an error.
+
+
+Resolver will always preload or fetch the data before rendering the component. It will not decide whther to route should be rendered or not. It will always render the component at the end.
